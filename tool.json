@@ -1,0 +1,347 @@
+{
+  "tool": {
+    "id": "indice-de-capacidade-para-o-trabalho",
+    "title": "Índice de Capacidade para o Trabalho (ICT)",
+    "short": "Work Ability Index, versão brasileira",
+    "spec": [
+      "medicina-do-trabalho",
+      "medicina-fisica-e-reabilitacao"
+    ],
+    "desc": "Calcule o Índice de Capacidade para o Trabalho (ICT/Work Ability Index): sete dimensões, escore de 7 a 49 e classificação de baixa a ótima capacidade.",
+    "lead": "Avalia como o próprio trabalhador percebe sua capacidade para o trabalho, considerando as exigências da função, doenças, faltas e recursos mentais.",
+    "fields": [
+      [
+        "i1",
+        "1. Capacidade para o trabalho atual, comparada com a melhor de toda a sua vida (0 a 10)",
+        "sel",
+        {
+          "opts": {
+            "0": "0 (incapaz de trabalhar)",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10 (a melhor de toda a vida)"
+          }
+        }
+      ],
+      [
+        "natureza",
+        "2. Natureza do trabalho",
+        "radio",
+        {
+          "opts": {
+            "f": "Principalmente físico",
+            "m": "Principalmente mental",
+            "a": "Físico e mental"
+          }
+        }
+      ],
+      [
+        "i2f",
+        "2a. Capacidade atual em relação às exigências <strong>físicas</strong> do trabalho",
+        "sel",
+        {
+          "opts": {
+            "1": "Muito baixa",
+            "2": "Baixa",
+            "3": "Moderada",
+            "4": "Boa",
+            "5": "Muito boa"
+          }
+        }
+      ],
+      [
+        "i2m",
+        "2b. Capacidade atual em relação às exigências <strong>mentais</strong> do trabalho",
+        "sel",
+        {
+          "opts": {
+            "1": "Muito baixa",
+            "2": "Baixa",
+            "3": "Moderada",
+            "4": "Boa",
+            "5": "Muito boa"
+          }
+        }
+      ],
+      [
+        "i3",
+        "3. Número de doenças atuais com diagnóstico médico (lista do questionário)",
+        "sel",
+        {
+          "opts": {
+            "1": "5 ou mais doenças",
+            "2": "4 doenças",
+            "3": "3 doenças",
+            "4": "2 doenças",
+            "5": "1 doença",
+            "7": "Nenhuma"
+          }
+        }
+      ],
+      [
+        "i4",
+        "4. Perda estimada para o trabalho por causa de doenças",
+        "sel",
+        {
+          "opts": {
+            "1": "Estou totalmente incapacitado para trabalhar",
+            "2": "Por causa da doença, só consigo trabalhar em tempo parcial",
+            "3": "Frequentemente preciso diminuir o ritmo ou mudar o método",
+            "4": "Algumas vezes preciso diminuir o ritmo ou mudar o método",
+            "5": "Consigo fazer o trabalho, mas ele me causa alguns sintomas",
+            "6": "Nenhum impedimento (ou não tenho doença)"
+          }
+        }
+      ],
+      [
+        "i5",
+        "5. Faltas ao trabalho por doença nos últimos 12 meses",
+        "sel",
+        {
+          "opts": {
+            "1": "De 100 a 365 dias",
+            "2": "De 25 a 99 dias",
+            "3": "De 10 a 24 dias",
+            "4": "Até 9 dias",
+            "5": "Nenhuma"
+          }
+        }
+      ],
+      [
+        "i6",
+        "6. Acredita que, do ponto de vista da saúde, conseguirá fazer seu trabalho atual daqui a 2 anos?",
+        "radio",
+        {
+          "opts": {
+            "1": "É improvável",
+            "4": "Não estou muito certo",
+            "7": "Bastante provável"
+          }
+        }
+      ],
+      [
+        "i7a",
+        "7a. Recentemente, tem conseguido apreciar suas atividades diárias?",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente",
+            "2": "Às vezes",
+            "3": "Quase sempre",
+            "4": "Sempre"
+          }
+        }
+      ],
+      [
+        "i7b",
+        "7b. Recentemente, tem se sentido ativo(a) e alerta?",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente",
+            "2": "Às vezes",
+            "3": "Quase sempre",
+            "4": "Sempre"
+          }
+        }
+      ],
+      [
+        "i7c",
+        "7c. Recentemente, tem se sentido cheio(a) de esperança para o futuro?",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente",
+            "2": "Às vezes",
+            "3": "Quase sempre",
+            "4": "Sempre"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Soma de 7 dimensões: (1) 0 a 10; (2) exigências físicas e mentais (1 a 5 cada), ponderadas pela natureza do trabalho: principalmente físico = física × 1,5 + mental × 0,5; principalmente mental = física × 0,5 + mental × 1,5; ambos = física + mental (2 a 10); (3) doenças: nenhuma 7, uma 5, duas 4, três 3, quatro 2, cinco ou mais 1; (4) perda para o trabalho 1 a 6; (5) faltas 1 a 5; (6) prognóstico 1, 4 ou 7; (7) recursos mentais: soma das três perguntas (0 a 12) convertida em 0 a 3 = 1, 4 a 6 = 2, 7 a 9 = 3, 10 a 12 = 4.</p><p>Total de 7 a 49.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Capacidade para o trabalho",
+        "Objetivo das medidas"
+      ],
+      [
+        "7 a 27",
+        "Baixa",
+        "Restaurar a capacidade"
+      ],
+      [
+        "28 a 36",
+        "Moderada",
+        "Melhorar a capacidade"
+      ],
+      [
+        "37 a 43",
+        "Boa",
+        "Apoiar a capacidade"
+      ],
+      [
+        "44 a 49",
+        "Ótima",
+        "Manter a capacidade"
+      ]
+    ],
+    "table_note": "Classificação do Instituto Finlandês de Saúde Ocupacional (Tuomi et al.; Ilmarinen, 2007).",
+    "tips": [
+      "Os pontos de corte são finlandeses, baseados em percentis de trabalhadores de lá. A validação brasileira (Martinez, 2009) recomenda cautela ao usar a classificação e sugere analisar também o escore contínuo.",
+      "Na dimensão 3, conte só as doenças com <strong>diagnóstico médico</strong> da lista do questionário oficial; doenças referidas sem diagnóstico não pontuam.",
+      "O ICT é autopreenchido e subjetivo: é ótimo para acompanhar grupos e o mesmo trabalhador ao longo do tempo, mas não substitui o exame de aptidão nem a perícia de incapacidade.",
+      "Escore baixo pede ação conjunta sobre a saúde do trabalhador e sobre o trabalho (ergonomia, organização, jornada), não só encaminhamento clínico."
+    ],
+    "sources": [
+      [
+        "Ilmarinen J. The Work Ability Index (WAI). Occup Med (Lond), 2007.",
+        "https://doi.org/10.1093/occmed/kqm008"
+      ],
+      [
+        "Martinez MC, Latorre MRDO, Fischer FM. Validade e confiabilidade da versão brasileira do Índice de Capacidade para o Trabalho. Rev Saúde Pública, 2009.",
+        "https://doi.org/10.1590/S0034-89102009000300017"
+      ]
+    ],
+    "cases": [
+      [
+        "Máximo em todas as dimensões: 49 (ótima)",
+        {
+          "i1": "10",
+          "natureza": "a",
+          "i2f": "5",
+          "i2m": "5",
+          "i3": "7",
+          "i4": "6",
+          "i5": "5",
+          "i6": "7",
+          "i7a": "4",
+          "i7b": "4",
+          "i7c": "4"
+        },
+        {
+          "raw": {
+            "score": 49
+          },
+          "level": "low",
+          "verdict": "ótima"
+        }
+      ],
+      [
+        "Trabalho mental, 8 + 8 + 5 + 5 + 4 + 7 + 3: 40 (boa)",
+        {
+          "i1": "8",
+          "natureza": "m",
+          "i2f": "4",
+          "i2m": "4",
+          "i3": "5",
+          "i4": "5",
+          "i5": "4",
+          "i6": "7",
+          "i7a": "3",
+          "i7b": "3",
+          "i7c": "3"
+        },
+        {
+          "raw": {
+            "score": 40,
+            "i2": 8,
+            "i7": 3
+          },
+          "level": "low",
+          "verdict": "boa"
+        }
+      ],
+      [
+        "Físico e mental, 7 + 7 + 4 + 5 + 4 + 4 + 3: 34 (moderada)",
+        {
+          "i1": "7",
+          "natureza": "a",
+          "i2f": "4",
+          "i2m": "3",
+          "i3": "4",
+          "i4": "5",
+          "i5": "4",
+          "i6": "4",
+          "i7a": "2",
+          "i7b": "2",
+          "i7c": "3"
+        },
+        {
+          "raw": {
+            "score": 34
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Trabalho físico: dimensão 2 = 3 × 1,5 + 4 × 0,5 = 6,5; total 27,5 (baixa)",
+        {
+          "i1": "5",
+          "natureza": "f",
+          "i2f": "3",
+          "i2m": "4",
+          "i3": "3",
+          "i4": "4",
+          "i5": "3",
+          "i6": "4",
+          "i7a": "2",
+          "i7b": "2",
+          "i7c": "2"
+        },
+        {
+          "raw": {
+            "score": 27.5,
+            "i2": 6.5,
+            "i7": 2
+          },
+          "level": "high",
+          "verdict": "baixa"
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}

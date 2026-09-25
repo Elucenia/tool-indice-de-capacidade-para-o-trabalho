@@ -1,0 +1,153 @@
+[
+  {
+    "label": "Máximo em todas as dimensões: 49 (ótima)",
+    "input": {
+      "i1": "10",
+      "natureza": "a",
+      "i2f": "5",
+      "i2m": "5",
+      "i3": "7",
+      "i4": "6",
+      "i5": "5",
+      "i6": "7",
+      "i7a": "4",
+      "i7b": "4",
+      "i7c": "4"
+    },
+    "expected": {
+      "raw": {
+        "score": 49
+      },
+      "level": "low",
+      "verdict": "ótima"
+    },
+    "originalInput": {
+      "i1": "10",
+      "natureza": "a",
+      "i2f": "5",
+      "i2m": "5",
+      "i3": "7",
+      "i4": "6",
+      "i5": "5",
+      "i6": "7",
+      "i7a": "4",
+      "i7b": "4",
+      "i7c": "4"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Trabalho mental, 8 + 8 + 5 + 5 + 4 + 7 + 3: 40 (boa)",
+    "input": {
+      "i1": "8",
+      "natureza": "m",
+      "i2f": "4",
+      "i2m": "4",
+      "i3": "5",
+      "i4": "5",
+      "i5": "4",
+      "i6": "7",
+      "i7a": "3",
+      "i7b": "3",
+      "i7c": "3"
+    },
+    "expected": {
+      "raw": {
+        "score": 40,
+        "i2": 8,
+        "i7": 3
+      },
+      "level": "low",
+      "verdict": "boa"
+    },
+    "originalInput": {
+      "i1": "8",
+      "natureza": "m",
+      "i2f": "4",
+      "i2m": "4",
+      "i3": "5",
+      "i4": "5",
+      "i5": "4",
+      "i6": "7",
+      "i7a": "3",
+      "i7b": "3",
+      "i7c": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Físico e mental, 7 + 7 + 4 + 5 + 4 + 4 + 3: 34 (moderada)",
+    "input": {
+      "i1": "7",
+      "natureza": "a",
+      "i2f": "4",
+      "i2m": "3",
+      "i3": "4",
+      "i4": "5",
+      "i5": "4",
+      "i6": "4",
+      "i7a": "2",
+      "i7b": "2",
+      "i7c": "3"
+    },
+    "expected": {
+      "raw": {
+        "score": 34
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "i1": "7",
+      "natureza": "a",
+      "i2f": "4",
+      "i2m": "3",
+      "i3": "4",
+      "i4": "5",
+      "i5": "4",
+      "i6": "4",
+      "i7a": "2",
+      "i7b": "2",
+      "i7c": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Trabalho físico: dimensão 2 = 3 × 1,5 + 4 × 0,5 = 6,5; total 27,5 (baixa)",
+    "input": {
+      "i1": "5",
+      "natureza": "f",
+      "i2f": "3",
+      "i2m": "4",
+      "i3": "3",
+      "i4": "4",
+      "i5": "3",
+      "i6": "4",
+      "i7a": "2",
+      "i7b": "2",
+      "i7c": "2"
+    },
+    "expected": {
+      "raw": {
+        "score": 27.5,
+        "i2": 6.5,
+        "i7": 2
+      },
+      "level": "high",
+      "verdict": "baixa"
+    },
+    "originalInput": {
+      "i1": "5",
+      "natureza": "f",
+      "i2f": "3",
+      "i2m": "4",
+      "i3": "3",
+      "i4": "4",
+      "i5": "3",
+      "i6": "4",
+      "i7a": "2",
+      "i7b": "2",
+      "i7c": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]
